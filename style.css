@@ -1,0 +1,150 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #007BFF;
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+
+/* Sections */
+section {
+  padding: 25px;
+}
+section h2 {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+}
+section h3 {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 5px;
+}
+section p {
+  color: #6C757D;
+  font-size: 16px;
+  text-align: center;
+}
+
+#header {
+  text-align: center;
+}
+#header img {
+  max-width: 20%;
+}
+#header #logo {
+  max-width: 10%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+#nav img {
+  max-width: 10px;
+}
+#nav ul {
+  text-align: center;
+}
+
+#home img {
+  max-width: 100%;
+  height: auto;
+}
+#home .caption {
+  line-height: 1.5;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  color: #6C757D;
+}
+
+#menu {
+  background-color: #007BFF;
+}
+#menu #card {
+  background-color: #6C757D;
+}
+#menu img {
+  max-width: 100%;
+  margin: 5px;
+}
+
+#about {
+  background-color: pink;
+}
+#about p {
+  margin-bottom: 20px;
+}
+
+#team {
+  background-color: #6C757D;
+}
+#team img {
+  max-width: 100%;
+  margin: 5px;
+}
+
+#contact {
+  text-align: center;
+  margin: 20px;
+}
+#contact #form {
+  padding: 20px 35px;
+  background-color: #007BFF;
+  max-width: 500px;
+  border-radius: 10px;
+}
+#contact label {
+  font-size: 16px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+#contact input,
+#contact textarea {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 2px solid #6C757D;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: white;
+  color: #6C757D;
+}
+#contact input ::-moz-placeholder, #contact textarea ::-moz-placeholder {
+  color: #6C757D;
+}
+#contact input ::placeholder,
+#contact textarea ::placeholder {
+  color: #6C757D;
+}
+#contact button {
+  background-color: #6C757D;
+  color: #007BFF;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#contact button:hover {
+  background-color: #545b62;
+}
+
+#footer {
+  background-color: pink;
+}
+#footer #logo {
+  max-width: 10%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+#footer .footer-section {
+  text-align: center;
+  padding: 20px;
+}
+#footer .footer-section img {
+  width: 30px;
+  height: 30px;
+}/*# sourceMappingURL=style.css.map */

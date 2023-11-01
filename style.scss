@@ -1,0 +1,175 @@
+// Variables for colors and fonts
+$primary-color: #007BFF;
+$secondary-color: #6C757D;
+$tertiary-colour: pink; 
+$font-stack: Arial, sans-serif;
+
+// Global styles
+body {
+    font-family: $font-stack;
+    background-color: $primary-color;
+    padding: 0;
+    margin: 0;
+    color: white; // Set text color to white for better contrast
+}
+
+@mixin P_style {
+    color: $secondary-color;
+    font-size: 16px;
+    text-align: center;
+}
+
+@mixin caption_style {
+    line-height: 1.5;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: $secondary-color;
+}
+
+/* Sections */
+section {
+    padding: 25px;
+    h2 {
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center;
+    }
+    h3 {
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        padding-top: 5px;
+    }
+    p {
+        @include P_style;
+    }
+}
+
+// Header
+#header {
+    text-align: center;
+    img {
+        max-width: 20%; // Make sure the image is responsive
+    }
+    #logo {
+        max-width: 10%;
+        height: auto; // Preserve the logo's aspect ratio
+        display: block;
+        margin: 0 auto; // Center the logo
+    }
+}
+
+// Navigation Bar
+#nav {
+    img {
+        max-width: 10px; // Make sure the logo is responsive
+    }
+    ul {
+        text-align: center;
+    }
+}
+
+// Home
+#home {
+    img {
+        max-width: 100%;
+        height: auto; // Preserve the image's aspect ratio
+    }
+    .caption {
+        @include caption_style;
+    }
+}
+
+// Menu
+#menu {
+    background-color: $primary-color; // Change background color
+    #card {
+        background-color: $secondary-color; // Change card background color
+    }
+    img {
+        max-width: 100%;
+        margin: 5px;
+    }
+}
+
+// About Us
+#about {
+    background-color: $tertiary-colour; // Change background color
+    p {
+        margin-bottom: 20px; // Add some space below the paragraph
+    }
+}
+
+// Team
+#team {
+    background-color: $secondary-color; // Change background color
+    #card {
+        background-color: $secondary-color;
+    img {
+        max-width: 100%;
+        margin: 5px;
+    }
+}
+
+// Contact Us
+#contact {
+    text-align: center;
+    margin: 20px;
+    #form {
+        padding: 20px 35px;
+        background-color: $primary-color; // Change form background color
+        max-width: 500px;
+        border-radius: 10px; // Add some rounded corners
+    }
+    label {
+        font-size: 16px;
+        font-weight: bold;
+        display: block;
+        margin-bottom: 5px; // Add space below labels
+    }
+    input,
+    textarea {
+        margin-top: 5px;
+        margin-bottom: 10px;
+        border: 2px solid $secondary-color; // Change input border color
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px; // Add rounded corners to input fields
+        background-color: white; // Set input background to white
+        color: $secondary-color; // Change input text color
+        ::placeholder {
+            color: $secondary-color; // Change placeholder text color
+        }
+    }
+    button {
+        background-color: $secondary-color; // Change button background color
+        color: $primary-color; // Change button text color
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px; // Add rounded corners to the button
+        cursor: pointer;
+        &:hover {
+            background-color: darken($secondary-color, 10%); // Darken the background on hover
+        }
+    }
+}
+
+// Footer
+#footer {
+    background-color: $tertiary-colour; // Change background color
+    #logo {
+        max-width: 10%;
+        height: auto; // Preserve the logo's aspect ratio
+        display: block;
+        margin: 0 auto; // Center the logo
+    }
+    .footer-section {
+        text-align: center;
+        padding: 20px;
+        img {
+            width: 30px;
+            height: 30px;
+        }
+    }
+}
